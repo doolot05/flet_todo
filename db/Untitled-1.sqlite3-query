@@ -1,0 +1,30 @@
+-- database: ./todo.db
+
+-- Чтобы выполнить весь файл, нажмите кнопку ▷ в правом верхнем углу окна.
+
+SELECT * FROM rasks;
+
+   
+    CREATE TABLE IF NOT EXISTS test (
+        id  INTEGER PRIMARY KEY AUTOINCREMENT,
+        fio TEXT NOT NULL,
+        number INTEGER NOT NULL
+        
+    );
+
+
+
+
+INSERT INTO test (fio, number) VALUES ('Эсенбеков Доолот', "0999039111");
+
+
+INSERT INTO test (fio) VALUES ('Эсенбеков Доолот');
+
+INSERT INTO test (fio, number) VALUES ('Эсенбеков Муха', "0999039112");
+
+
+SELECT * FROM test;
+
+UPDATE test SET number = 0500290405 WHERE id = 2;
+
+DELETE FROM test WHERE id = 2
